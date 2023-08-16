@@ -1,0 +1,386 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.WebApi\\ApplicationInsightsDemo.WebApi.csproj": {}
+  },
+  "projects": {
+    "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.BusinessLogic\\ApplicationInsightsDemo.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.BusinessLogic\\ApplicationInsightsDemo.BusinessLogic.csproj",
+        "projectName": "ApplicationInsightsDemo.BusinessLogic",
+        "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.BusinessLogic\\ApplicationInsightsDemo.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\gatz_s\\.nuget\\packages\\",
+        "outputPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gatz_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget-service.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Common\\ApplicationInsightsDemo.Common.csproj": {
+                "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Common\\ApplicationInsightsDemo.Common.csproj"
+              },
+              "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.DataAccess\\ApplicationInsightsDemo.DataAccess.csproj": {
+                "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.DataAccess\\ApplicationInsightsDemo.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Common\\ApplicationInsightsDemo.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Common\\ApplicationInsightsDemo.Common.csproj",
+        "projectName": "ApplicationInsightsDemo.Common",
+        "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Common\\ApplicationInsightsDemo.Common.csproj",
+        "packagesPath": "C:\\Users\\gatz_s\\.nuget\\packages\\",
+        "outputPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gatz_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget-service.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Configuration\\ApplicationInsightsDemo.Configuration.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Configuration\\ApplicationInsightsDemo.Configuration.csproj",
+        "projectName": "ApplicationInsightsDemo.Configuration",
+        "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Configuration\\ApplicationInsightsDemo.Configuration.csproj",
+        "packagesPath": "C:\\Users\\gatz_s\\.nuget\\packages\\",
+        "outputPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Configuration\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gatz_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget-service.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.DataAccess\\ApplicationInsightsDemo.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.DataAccess\\ApplicationInsightsDemo.DataAccess.csproj",
+        "projectName": "ApplicationInsightsDemo.DataAccess",
+        "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.DataAccess\\ApplicationInsightsDemo.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\gatz_s\\.nuget\\packages\\",
+        "outputPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gatz_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget-service.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.WebApi\\ApplicationInsightsDemo.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.WebApi\\ApplicationInsightsDemo.WebApi.csproj",
+        "projectName": "ApplicationInsightsDemo.WebApi",
+        "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.WebApi\\ApplicationInsightsDemo.WebApi.csproj",
+        "packagesPath": "C:\\Users\\gatz_s\\.nuget\\packages\\",
+        "outputPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gatz_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget-service.azurewebsites.net/nuget": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.BusinessLogic\\ApplicationInsightsDemo.BusinessLogic.csproj": {
+                "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.BusinessLogic\\ApplicationInsightsDemo.BusinessLogic.csproj"
+              },
+              "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Configuration\\ApplicationInsightsDemo.Configuration.csproj": {
+                "projectPath": "D:\\Topics\\9. ApplicationInsightsAndKeyVault\\ApplicationInsightsDemo\\ApplicationInsightsDemo\\ApplicationInsightsDemo.Configuration\\ApplicationInsightsDemo.Configuration.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.4.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Microsoft.Azure.AppConfiguration.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

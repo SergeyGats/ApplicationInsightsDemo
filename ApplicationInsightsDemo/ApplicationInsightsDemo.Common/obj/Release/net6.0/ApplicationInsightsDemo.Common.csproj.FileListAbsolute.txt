@@ -1,0 +1,12 @@
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\bin\Release\net6.0\ApplicationInsightsDemo.Common.deps.json
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\bin\Release\net6.0\ApplicationInsightsDemo.Common.dll
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\bin\Release\net6.0\ApplicationInsightsDemo.Common.pdb
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.csproj.AssemblyReference.cache
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.AssemblyInfoInputs.cache
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.AssemblyInfo.cs
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.csproj.CoreCompileInputs.cache
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.dll
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\refint\ApplicationInsightsDemo.Common.dll
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ApplicationInsightsDemo.Common.pdb
+D:\Topics\9. ApplicationInsightsAndKeyVault\ApplicationInsightsDemo\ApplicationInsightsDemo\ApplicationInsightsDemo.Common\obj\Release\net6.0\ref\ApplicationInsightsDemo.Common.dll

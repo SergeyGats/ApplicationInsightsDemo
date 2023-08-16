@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UbOKk+EE4yYaflVj2iTjHRSS+VogTdryPeN7PmjXD0k=",
+  "Source": "ApplicationInsightsDemo.WebApi",
+  "BasePath": "_content/ApplicationInsightsDemo.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

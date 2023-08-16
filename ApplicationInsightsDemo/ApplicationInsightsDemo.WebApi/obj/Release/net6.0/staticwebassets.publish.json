@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KYh9phXhGdTgB/5+dbWtfoAjvlugBbCv+HFfw/euM50=",
+  "Source": "ApplicationInsightsDemo.WebApi",
+  "BasePath": "_content/ApplicationInsightsDemo.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
