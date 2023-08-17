@@ -1,47 +1,58 @@
-﻿using ApplicationInsightsDemo.WebApi.Options;
+﻿using ApplicationInsightsDemo.Configuration.Models;
 using Azure.Identity;
 
 namespace ApplicationInsightsDemo.WebApi.ApplicationConfigurationExtensions;
 
 public static class KeyVaultConfigurationExtensions
 {
-    public static void AddKeyVaultConfiguration(this IServiceCollection services, WebApplicationBuilder builder, IConfiguration configuration)
+    private const string ConnectionStringName = "AzureAppConfiguration";
+
+    private const int SecretRefreshIntervalSecondsNumber = 15;
+    private static readonly TimeSpan SecretRefreshIntervalTimeSpan = TimeSpan.FromSeconds(SecretRefreshIntervalSecondsNumber);
+
+    private const int CacheExpirationSecondsNumber = 15;
+    private static readonly TimeSpan CacheExpirationTimeSpan = TimeSpan.FromSeconds(CacheExpirationSecondsNumber);
+
+    public static DatabaseConnectionStrings AddKeyVaultConfiguration(this IServiceCollection services,
+        WebApplicationBuilder builder,
+        IConfiguration configuration)
     {
-        try
+        builder.Host.ConfigureAppConfiguration(options =>
         {
-            builder.Host.ConfigureAppConfiguration(options =>
-          {
-              var azureAppConfigurationConnectionStringName = "AzureAppConfiguration";
-              var azureAppConfigurationConnectionString = configuration.GetConnectionString(azureAppConfigurationConnectionStringName);
+            var connectionString = configuration.GetConnectionString(ConnectionStringName);
 
-              options.AddAzureAppConfiguration(appConfigurationOptions =>
-              {
-                  appConfigurationOptions.Connect(azureAppConfigurationConnectionString);
-                  appConfigurationOptions.ConfigureKeyVault(keyVaultOptions =>
-                  {
-                      keyVaultOptions.SetCredential(new DefaultAzureCredential());
-                      keyVaultOptions.SetSecretRefreshInterval(TimeSpan.FromSeconds(15));
-                  }).ConfigureRefresh(refreshOptions =>
-                  {
-                      refreshOptions.Register($"{AppConfOptions.AppConfOptionsKey}:{nameof(AppConfOptions.FirstConfValue)}")
-                          .SetCacheExpiration(TimeSpan.FromSeconds(15));
+            options.AddAzureAppConfiguration(appConfigurationOptions =>
+            {
+                appConfigurationOptions.Connect(connectionString);
+                appConfigurationOptions.ConfigureKeyVault(keyVaultOptions =>
+                {
+                    keyVaultOptions.SetCredential(new DefaultAzureCredential());
+                    keyVaultOptions.SetSecretRefreshInterval(SecretRefreshIntervalTimeSpan);
+                }).ConfigureRefresh(refreshOptions =>
+                {
+                    refreshOptions.Register($"{nameof(FirstFeatureSettings)}:{nameof(FirstFeatureSettings.StartDate)}")
+                        .SetCacheExpiration(CacheExpirationTimeSpan);
 
-                      refreshOptions.Register($"{AppConfOptions.AppConfOptionsKey}:{nameof(AppConfOptions.SecondConfValue)}")
-                          .SetCacheExpiration(TimeSpan.FromSeconds(15));
-                  });
-              });
-          });
+                    refreshOptions.Register($"{nameof(FirstFeatureSettings)}:{nameof(FirstFeatureSettings.EndDate)}")
+                        .SetCacheExpiration(CacheExpirationTimeSpan);
 
-            services.AddAzureAppConfiguration();
-            var hz1 = configuration.GetSection(AppConfOptions.AppConfOptionsKey);
-            var hz2 = configuration.GetSection("FirstConfiguration");
+                    refreshOptions.Register($"{nameof(FirstFeatureSettings)}:{nameof(FirstFeatureSettings.Message)}")
+                        .SetCacheExpiration(CacheExpirationTimeSpan);
 
-            services.Configure<AppConfOptions>(builder.Configuration.GetSection(AppConfOptions.AppConfOptionsKey));
-            //services.Configure<AppConfOptions>(builder.Configuration.GetSection("FirstConfiguration"));
-        }
-        catch (Exception ex)
-        {
-            throw;
-        }
+                    refreshOptions.Register($"{nameof(DatabaseConnectionStrings)}:{nameof(DatabaseConnectionStrings.ApplicationInsightsDemo)}")
+                        .SetCacheExpiration(CacheExpirationTimeSpan);
+                });
+            });
+        });
+
+        services.AddAzureAppConfiguration();
+
+        services.Configure<FirstFeatureSettings>(builder.Configuration.GetSection(nameof(FirstFeatureSettings)));
+
+        var databaseConnectionStringsSection = builder.Configuration.GetSection(nameof(DatabaseConnectionStrings));
+        services.Configure<DatabaseConnectionStrings>(databaseConnectionStringsSection);
+        var databaseConnectionString = databaseConnectionStringsSection.Get<DatabaseConnectionStrings>();
+
+        return databaseConnectionString;
     }
 }

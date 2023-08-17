@@ -14,14 +14,15 @@ services.AddControllers();
 
 var commonApplicationSettings = services.AddApplicationSettingsConfiguration(configuration);
 
+services.AddApplicationInsightsConfiguration();
+var databaseConnectionStrings = services.AddKeyVaultConfiguration(builder, configuration);
+
 services.AddAutoMapperConfiguration();
-services.AddDbContextConfiguration(configuration, commonApplicationSettings);
+services.AddDbContextConfiguration(configuration, commonApplicationSettings, databaseConnectionStrings);
 services.AddDependencyInjectionConfiguration();
 services.AddFluentValidationConfiguration();
 //services.AddNlogConfiguration();
 services.AddSwaggerConfiguration();
-services.AddApplicationInsightsConfiguration();
-services.AddKeyVaultConfiguration(builder, configuration);
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-﻿using ApplicationInsightsDemo.WebApi.Options;
+﻿using ApplicationInsightsDemo.Configuration.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
@@ -6,20 +6,23 @@ namespace ApplicationInsightsDemo.WebApi.Controllers;
 
 public class ConfigurationsController : ApplicationControllerBase
 {
-    private readonly IOptionsMonitor<AppConfOptions> _optionsMonitor;
+    private readonly IOptionsMonitor<FirstFeatureSettings> _firstFeatureOptionMonitor;
 
-    public ConfigurationsController(IOptionsMonitor<AppConfOptions> optionsMonitor)
+    public ConfigurationsController(IOptionsMonitor<FirstFeatureSettings> firstFeatureOptionMonitor)
     {
-        _optionsMonitor = optionsMonitor;
+        _firstFeatureOptionMonitor = firstFeatureOptionMonitor;
     }
 
-    [HttpGet]
-    public List<string> GetAll()
+    [HttpGet("FirstFeature")]
+    public IActionResult Get()
     {
-        return new List<string>
+        var values = new List<string>
         {
-            _optionsMonitor.CurrentValue.FirstConfValue,
-            _optionsMonitor.CurrentValue.SecondConfValue
+            _firstFeatureOptionMonitor.CurrentValue.StartDate.ToString(),
+            _firstFeatureOptionMonitor.CurrentValue.EndDate.ToString(),
+            _firstFeatureOptionMonitor.CurrentValue.Message
         };
+
+        return Ok(values);
     }
 }

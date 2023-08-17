@@ -10,9 +10,11 @@ namespace ApplicationInsightsDemo.WebApi.ApplicationConfigurationExtensions
 
         public static void AddDbContextConfiguration(this IServiceCollection services,
             IConfiguration configuration,
-            CommonApplicationSettings commonApplicationSettings)
+            CommonApplicationSettings commonApplicationSettings,
+            DatabaseConnectionStrings databaseConnectionStrings)
         {
-            var connectionString = configuration.GetConnectionString(ConnectionStringName);
+            //var connectionString = configuration.GetConnectionString(ConnectionStringName);
+            var connectionString = databaseConnectionStrings.ApplicationInsightsDemo;
 
             services.AddDbContext<ApplicationInsightsDemoDbContext>(options =>
             {
